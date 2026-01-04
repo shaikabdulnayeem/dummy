@@ -1,0 +1,17 @@
+indentication division.
+program-id palindrome.
+data division.
+
+working-storage section.
+01 sre1 pic a(10) value 'HELLOCOBOL'.
+01 STR2 PIC A(10).
+01 I PIC 9(2) VALUE 10.
+01 J PIC 9(2) VALUE 01.
+PROCEDURE DIVISION.
+   PERFORM PARA1 UNTIL J>10
+   DISPLAY STR1.
+   DISPLAY STR2.
+   STOP RUN.
+PARA1.
+   MOVE STR1(I:1) TO STR2(J:1).
+   ADD 1 TO J.
